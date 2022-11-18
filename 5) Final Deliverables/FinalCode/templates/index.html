@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Phishing</title>
+    <style>
+      body 
+      {
+  background-image: url('sample.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin-top: 25px;
+  margin-left: 600px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+      }
+      button 
+      {
+  background-color: #ca8456; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+      
+    </style>
+  </head>
+  <body >
+    <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="\about">About</a>
+  <a href="\contact">Contact</a>
+</div>
+<span style="font-size:40px;cursor:pointer;margin-left:-600px;" onclick="openNav()">&#9776;OPEN</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script><br>
+`	<center>
+      <h2><b>Phishing URL Detection</b></h2>
+
+      <form name="form" action="/y_predict" method="post" class="body">
+        <input
+          type="text"
+          id="url"
+          name="url"
+          placeholder="Enter a URL"
+          size="50"
+        /><br><br>
+        <button type="submit">Submit</button>
+      </form>
+     <!-- <h3 style="text-align: center; color: red; font-size: 20px">{{ans}}</h3>
+      <h3 style="text-align: center; color: green; font-size: 20px">{{bns}}</h3>-->
+    </center>
+  </body>
+</html>
