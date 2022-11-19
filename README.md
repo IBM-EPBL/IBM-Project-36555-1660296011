@@ -26,5 +26,5 @@ So phishing detection is necessarily important to our data protection.
     SakthiLakshmi B- GCE Tirunelveli
     
   # Demo Link
-    Give a look - [Play](https://youtu.be/Iwcn8u892gM)
-    Click [here](quora.com/profile/Ashish-Kulkarni-100) to go to my Quora profile. 
+    https://youtu.be/Iwcn8u892gM
+    
