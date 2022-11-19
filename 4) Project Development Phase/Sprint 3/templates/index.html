@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Phishing</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <style>
+      body {
+        background-image: url('../static/sample.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        font-family: cursive;
+      }
+      .main {
+        margin-left: 800px;
+      }
+
+      input[type='text'] {
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid #000000;
+        font-size: large;
+      }
+      button {
+        background-color: #ca8456; /* Green */
+        border: none;
+        color: white;
+        padding: 10px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+      .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: white;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
+
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        background: transparent;
+        display: block;
+        transition: 0.3s;
+        color: #818181;
+      }
+
+      .sidenav a:hover {
+        color: #f1f1f1;
+      }
+
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+
+      @media screen and (max-height: 450px) {
+        .sidenav {
+          padding-top: 15px;
+        }
+        .sidenav a {
+          font-size: 18px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div style="height: 15vh">
+        <img
+          style="height: 10vh; margin: 10px; float: left"
+          src="../static/phishpointlogo.jpg"
+        />
+        <p
+          style="
+            display: inline-block;
+            vertical-align: middle;
+            font-size: x-large;
+            color: dodgerblue;
+            font-family: cursive;
+            line-height: 1.5;
+          "
+        >
+          Phishingpoint
+        </p>
+      </div>
+    </header>
+    <div id="mySidenav" class="sidenav">
+      <a
+        href="javascript:void(0)"
+        class="closebtn"
+        onclick="closeNav()"
+        style="margin: 10px"
+        >&times;</a
+      >
+      <a href="/about">About</a>
+      <a href="/contact">Contact</a>
+    </div>
+    <span style="font-size: 40px; cursor: pointer" onclick="openNav()"
+      >&#9776;</span
+    >
+    <br />
+
+    <center>
+      <div class="main">
+        <h1 style="font-family: cursive"><b>Phishing URL Detection</b></h1>
+
+        <form name="form" action="/y_predict" method="post" class="body">
+          <i class="fa-solid fa-link"></i>
+          <input
+            type="text"
+            id="url"
+            name="url"
+            placeholder="Enter a URL to verify"
+            size="50"
+            style="height: 30px"
+          /><br /><br />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </center>
+  </body>
+
+  <script>
+    function openNav() {
+      document.getElementById('mySidenav').style.width = '250px';
+    }
+
+    function closeNav() {
+      document.getElementById('mySidenav').style.width = '0';
+    }
+  </script>
+</html>
