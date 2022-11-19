@@ -34,16 +34,7 @@ def y_predict():
     else:
         pred="You are on the wrong site. Be cautious!"        
         return render_template('index.html',ans=pred)
-
-
-'''@app.route('/predict_api', methods=['POST'])
-def predict_api():
-    
-    data = request.get_json(force=True)
-    prediction = model.y_predict([np.array(list(data.values()))])
-
-    output=prediction[0]
-    return jsonify(output)   '''     
+  
  
 if __name__ == '__main__':
     app.run()
