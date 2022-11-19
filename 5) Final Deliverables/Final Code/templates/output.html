@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <title>Result
+    </title>
+    <style>
+      body {
+        background-color: cornsilk;
+      }
+      i{
+color:black;
+font-size: xx-large;
+margin: 50px;
+}
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  </head>
+  <body>
+    <body>
+    
+        <header>
+            <img style="height: 10%; margin: 10px; float: left" src="../static/phishpointlogo.jpg">
+            <p style="
+                display: inline-block;
+                vertical-align: middle;
+                font-size: x-large;
+                color: dodgerblue;
+                font-family: cursive;
+                line-height: 1.5;
+              ">
+              Phishingpoint
+            </p>
+          </header>
+          <a href="/"><i class="fa-solid fa-chevron-left"></i></a>
+          <div>
+            <div style="width: 100%; overflow: hidden" class="sidebyside">
+              <div style="width: 600px; float: left; position: absolute; margin-top: 3%" class="up_down">
+                <div class="image">
+                  <img style="
+                      height: 550px;
+                      width: 100%;
+                      border: 2px solid aliceblue;
+                      border-radius: 1%;
+                      margin: 10px 0 10px 10px;
+                      padding-left: 50px;
+                    " src="../static/phishing-for-identity.jpg">
+                </div>
+              </div>
+              <div style="
+                  margin-left: 550px; 
+                  margin-right: 5%;
+                ">
+                <div style="margin-right: 5%;width: 1200px;height: 500px;background-color: aliceblue;text-align: center;padding-top: 20%;">
+                <h2><a href= {{ url }} target="_blank" style="text-decoration: none;">{{ url }}</a></h2> <br>
+                <h1 style="text-align: center; color: red; ">{{ans}}</h1>
+                <h1 style="text-align: center; color: green; ">{{bns}}</h1><br>
+                <button type="button" class="btn btn-info"><a href= {{ url }} target="_blank" style="text-decoration: none; color: white;">Want to Continue</a></button>
+                
+                <h1></h1>
+              </div>
+             
+            </div>
+          </div>
+  </body>
+</html>
